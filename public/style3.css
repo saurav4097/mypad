@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Navigation Bar */
+.box1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box11 {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#box111:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Search Form */
+.search11 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search11 form {
+    display: flex;
+    gap: 10px;
+}
+
+.search11 input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.search11 button {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search11 button:hover {
+    background-color: #575757;
+}
+
+/* Results Display */
+.boxx2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.boxx21 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boxxx1 {
+    font-size: 22px;
+    font-weight: bold;
+    width: 200px;
+    
+    display: inline-block;
+
+
+}
+
+.boxxx2 a {
+    font-size: 18px;
+    color: #090d11;
+    width: 790px;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    overflow-x:scroll;
+}
+
+.boxxx2 a:hover {
+    text-decoration: underline;
+    color: #0c0e11;
+}
+.boxxx3 {
+    background-color: #f0f0f0;
+   
+   width: 80px;
+    
+}
+/* No Items Message */
+p {
+    text-align: center;
+    font-size: 18px;
+}
+.edit{
+    background-color: rgb(244, 244, 239);
+    border-radius: 5px;
+    border-color: rgb(246, 246, 239);
+}
+.delete{
+    background-color: rgb(243, 109, 109);
+    border-radius: 5px;
+    border-color: rgb(245, 107, 107);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>navbar page</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="box0">
+    <% if (pairVector3.length > 0 && pairVector3[0].length > 0) { %>
+      <a>Hello <%= pairVector3[0][0] %> !</a>
+  <% } else { %>
+      <p>No data available.</p>
+  <% } %>
+
+  <form action="/signout" method="GET" style="margin-left: auto;">
+    <button type="submit" class="signout">SignOut</button>
+</form>
+  </div>
+    <div class="box1">
+        
+       <a class="box11"  style="color: green;font-weight: bolder;">mypad*`'/.</a>
+        <a class="box11"  id="box111"  href="/home" >Home</a>
+        <a class="box11"  id="box111"  href="/add">Add </a>
+        
+        <a class="box11"  id="box111"   href="/search">search</a>  
+       
+    </div>
+    <div class="boxx2">
+        
+        <% if (pairVector && pairVector.length) { %>
+          <% for (let i = 0; i < pairVector.length; i++) { %>
+            <div class="boxx21">
+             <div class="boxxx1"><h1> <%= pairVector[i][0] %></h1></div>
+             <div class="boxxx2"><a><%= pairVector[i][1] %></a></div>
+             <div class="boxxx3">
+                <!-- Edit button -->
+                
+             
+                    
+                    <form action="/home" method="POST" >
+                      <input type="hidden" name="action" value="<%=pairVector[i][0]  %>">
+                      <input type="hidden" name="action" value="<%=pairVector[i][1]  %>">
+                      <button type="submit">Edit</button>
+                    </form>
+                 
+                
+                
+              
+                <!-- Delete button -->
+                <form action="/delete" method="POST">
+                  <input type="hidden" name="topic" value="<%= pairVector[i][0] %>">
+                  <button type="submit" class="delete">Delete</button>
+                </form>
+              </div>
+            </div>
+
+          <% } %>
+        <% } else { %>
+          <p>No items to display.</p>
+        <% } %>
+      </div>
+      
+
+      </div>
+</body>
+</html>

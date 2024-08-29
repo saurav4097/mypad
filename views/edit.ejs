@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>navbar page</title>
+    <link rel="stylesheet" href="/style4.css" />
+</head>
+<body>
+    <div class="box1">
+        <a class="box11"  style="color: green;font-weight: bolder;">mypad*`'/.</a>
+        <a class="box11" id="box111"  href="/home">Home</a>
+        <a class="box11" id="box111" href="/add">Add </a>
+        <a class="box11" id="box111" href="/search">Search</a> 
+    </div>
+   <div class="box2" >
+    <form action="/edit" method="POST">
+  <input type="text" name="topic[0]" value="<%= editselector1 %>" />
+  <textarea class="abcd" name="topic[1]"><%= editselector2 %></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+      
+   </div>
+</body>
+</html>

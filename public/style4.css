@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.box1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 15px;
+}
+
+.box11 {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#box111:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Main content area */
+.box2 {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+#a1234{
+    height: 70px;
+    width: 400px;
+}
+#b1234{
+    height: 150px;
+    width: 400px;
+}
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #575757;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .box1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+.abcd{
+    width: 100%; /* Full width of its container or set a specific width */
+    height: 40vh; /* Adjust height as needed */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+    resize: none; /* Optional: Disable resizing the textarea */
+    padding: 10px; /* Padding inside the textarea */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    white-space: pre-wrap; /* Ensure text wraps within the textarea */
+    line-height: 1.5; /* Adjust line height for better readability */
+    
+}

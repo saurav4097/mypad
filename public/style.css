@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+
+.box0 {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Distributes items evenly with space around them */
+    background-color: #333; /* Dark gray background color */
+    padding: 15px; /* Padding inside the box */
+    height: 70px; /* Height of the box */
+    font-size:50px; /* Larger font size for text */
+    text-align: left; /* Text aligns to the left */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 5px; /* Space below the box */
+    color: white;  
+}
+.box0 .signout {
+    margin-left: auto; /* Push the button to the far right */
+    background-color: #ff0000; /* Red background color for the button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+/* Navigation Bar */
+.box1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+
+.box11 {
+    color: white;
+    text-decoration: none;
+    padding:  20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#box111:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Content Box */
+.boxx2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+
+.boxx21 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boxxx1 {
+    font-size: 22px;
+    font-weight: bold;
+    width: 200px;
+    
+    display: inline-block;
+
+
+}
+
+.boxxx2 a {
+    font-size: 18px;
+    color: #090d11;
+    width: 790px;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    overflow-x:scroll;
+}
+
+.boxxx2 a:hover {
+    text-decoration: underline;
+    color: #0c0e11;
+}
+.boxxx3 {
+    background-color: #f0f0f0;
+    
+   width: 80px;
+    
+}
+
+/* No Items Message */
+p {
+    text-align: center;
+    font-size: 18px;
+}
+.edit{
+    background-color: yellow;
+    border-radius: 5px;
+    border-color: yellow;
+
+}
+
+.delete{
+    background-color: red;
+    border-radius: 5px;
+    border-color: red;
+}

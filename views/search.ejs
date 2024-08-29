@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>navbar page</title>
+    <link rel="stylesheet" href="/style3.css" />
+</head>
+<body>
+    <div class="box1">
+      <a class="box11"   style="color: green;font-weight: bolder;">mypad*`'/.</a>
+        <a class="box11"  id="box111"   href="/home" >Home</a>
+        <a class="box11"  id="box111"  href="/add">Add </a>
+        
+        <a class="box11"  id="box111"  href="/search">search</a>  
+        
+    </div>
+    <div class="search11">
+        <form action="/search1" method="GET">
+            <input type="text" name="query" placeholder="Search..." />
+            <button type="submit">Search</button>
+          </form>
+    </div>
+    <div class="boxx2">
+        <% if (pairVector2.length>0) { %>
+          <% for (let i = 0; i < pairVector2.length; i++) { %>
+            <div class="boxx21">
+             <div class="boxxx1"><h1> <%= pairVector2[i][0] %></h1></div>
+             <div class="boxxx2"><a><%= pairVector2[i][1] %></a></div>
+             <div class="boxxx3">
+                <!-- Edit button -->
+                
+             
+                    
+                <form action="/search" method="POST" >
+                  <input type="hidden" name="action" value="<%=pairVector2[i][0]  %>">
+                  <input type="hidden" name="action" value="<%=pairVector2[i][1]  %>">
+                  <button type="submit">Edit</button>
+                </form>
+                <!-- Delete button -->
+                <form action="/delete" method="POST">
+                  <input type="hidden" name="topic" value="<%= pairVector2[i][0] %>">
+                  <button type="submit" class="delete">Delete</button>
+                </form>
+              </div>
+            </div>
+          <% } %>
+        <% } else { %>
+          <p style="color: red;font-weight:bolder;">No items display.</p>
+        <% } %>
+      </div>
+</body>
+</html>
